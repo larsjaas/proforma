@@ -20,7 +20,7 @@ description := "A tool for presenting forms and emailing form fills."
 
 licenses += "GPLv2" -> url("https://www.gnu.org/licenses/gpl-2.0.html")
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.4"
 
 val gitbranch = ("git rev-parse --abbrev-ref HEAD" !!).trim
 val gitcommit = ("git rev-parse HEAD" !!).trim
@@ -83,7 +83,7 @@ libraryDependencies ++= skjemailDeps
 
 fork := true
 connectInput in run := true
-//javaOptions in run += "-Dportfolio.config.dir=/Users/larsa/Code/portfolio/target/scala-2.12/classes"
+javaOptions in run += "-Dskjemail.config.dir=/Users/larsa/Code/eyasys/skjemail/target/scala-2.12/classes"
 
 // includeFilter in (Assets, JstKeys.jst) := "*.html"
 // excludeFilter in (Assets, JstKeys.jst) := "index.html"

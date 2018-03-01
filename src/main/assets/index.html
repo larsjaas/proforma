@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Skjema</title>
+<style>
+h1.tittel {
+    font-size: 16pt;
+    text-align: center;
+}
+table.layout {
+    width: 100%;
+    border: 2px solid black;
+}
+
+div.advarsel {
+    width: 90%;
+    margin: auto;
+    border: 2px solid red;
+}
+</style>
+</head>
+<body>
+<h1 class="tittel">LOPPEHENTING FOR LEVRE SKOLES MUSIKKORPS</h1>
+(kjørelappene leveres på Levre Skole kl. 18.00 alle hentedagene)<br/>
+
+NB! Ring å varsle hvis lopper ikke kan hentes som avtalt !!
+
+<form name="skjema" id="skjema" method="post" action="/api/post-form">
+    <hr/>
+    <table class="layout">
+        <tr>
+            <td>
+                Mottatt: <input name="mottatt" id="mottatt" type="text"/>
+            </td>
+            <td>
+                Hentes: <input name="hentes" id="hentes" type="text"/>
+            </td>
+            <td>
+                Ikke tilstede: <input name="ikketilstede" id="ikketilstede" type="text"/> <br/>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+    Navn: <input name="navn" id="navn" type="text"/> <br/>
+    Adresse: <input name="adresse" id="adresse" type="text"/> <br/>
+    Telefon: <input name="telefon" id="telefon" type="text"/> <br/>
+    Beskjed: <input name="beskjed" id="beskjed" type="text"/> <br/>
+    Lokasjon: <select name="lokasjon" id="lokasjon">
+    <option id="0">1300-38 SANDVIKA</option>
+    <option id="1">1365 BLOMMENHOLM</option>
+
+    <option id="">1346 GJETTUM</option>
+    <option id="">1351 RUD</option>
+    <option id="">1352 KOLSÅS</option>
+
+    <option id="">1330 FORNEBU</option>
+    <option id="">1363 HØVIK</option>
+    <option id="">1366 LYSAKER</option>
+    <option id="">1367 SNARØYA</option>
+    <option id="">1368-69 STABEKK</option>
+
+    <option id="">1344 HASLUM</option>
+    <option id="">1356-57 BEKKESTUA</option>
+    <option id="">1358 JAR</option>
+    <option id="">1359 EIKSMARKA</option>
+    <option id="">1361 ØSTERÅS</option>
+    <option id="">1362 HOSLE</option>
+
+    <option id="">1339 VØYENENGA</option>
+    <option id="">1340 SKUI</option>
+    <option id="">1348-49 RYKKINN</option>
+    <option id="">1350 LOMMEDALEN</option>
+    <option id="">1353-54 BÆ-VERK</option>
+    <option id="">3538 SOLLIHØGDA</option>
+
+    <option id="">1341 SLEPENDEN</option>
+    <option id="">1394 NESBRU</option>
+    <option id="">1395 HVALSTAD</option>
+    <option id="">1396 BILLINGSTAD</option>
+    <option id="">1397 NESØYA</option>
+</select> <br/>
+    Nødvendig med tilhenger: <input id="tilhenger" type="checkbox"/> <br/>
+    <hr/>
+    <input id="boker" type="checkbox"/> Bøker <br/>
+    <input id="leker" type="checkbox"/> Leker <br/>
+    <input id="sportsutstyr" type="checkbox"/> Sportsutstyr <br/>
+    <input id="kjokkenutstyr" type="checkbox"/> Kjøkkenutstyr <br/>
+    <input id="elektrisk" type="checkbox"/> Elektrisk <br/>
+    <input id="mobler" type="checkbox"/> Møbler <br/>
+    Total Mengde: <select>
+    <option id="0">0-10 kolli</option>
+    <option id="1">10-25 kolli</option>
+    <option id="2">25+ kolli</option>
+</select> <br/>
+    <hr/>
+    <input id="lever" type="submit">
+    <hr/>
+</form>
+
+<div class="advarsel">
+<table class="advarsel" width="100%">
+    <tr>
+        <td>
+            <strong>Vi tar ikke imot følgende lopper:</strong><br/>
+            Leksikon, gamle TV’er, PC’er + PC-skjermer, panelovner, bildekk & felger, velbrukte og stygge madrasser, hvitevarer, trevirke & trykkimpregnerte gjenstander, IKEA-folie møbler, ukurante ski & barnevogner, klesrulle.
+            Seksjoner, stygge sofaer: Her må utøves skjønn – nye og pene ting tar vi.
+            Generelt skal ting være helt og greit, eller kurant å sette i stand.
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
